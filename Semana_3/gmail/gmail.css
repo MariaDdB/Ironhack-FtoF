@@ -1,0 +1,34 @@
+/*body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.box-google {
+	width: 100%;
+
+	background: #E1E3E1;
+
+	padding: 15px;
+	float: left;
+	position: fixed;
+}
+
+/*.search {
+	width: 700px;
+	text-align: right;
+}
+
+
+.box-gmail{
+	width: 100%;
+	text-align: center;
+	position: fixed;
+}
+
+.button-img {
+
+}
+*/
+p:hover {
+	background-color: grey;
+}

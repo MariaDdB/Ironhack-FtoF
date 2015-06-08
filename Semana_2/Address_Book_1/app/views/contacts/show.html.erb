@@ -1,0 +1,13 @@
+<p><strong><%= @contact.name %></strong></p>
+
+<% @contact.numbers.each do |number| %>
+	<p><%= number.phone_number %></p>
+<% end %>
+
+<% @contact.addresses.each do |address| %>
+	<p><%= address.email_address %></p>
+<% end %>
+
+<br>
+
+<%= link_to 'Back', contacts_path %>

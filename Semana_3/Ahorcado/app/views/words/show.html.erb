@@ -1,0 +1,16 @@
+<% word = @word.name.split("") %>
+
+
+<%= form  %>
+	Introduce la letra:
+    <%= text_field :input %>
+    <br>
+
+    <%= f.submit 'Save' %>
+<% end %>
+
+
+<% word.each do |letter| %>
+    <% if letter == input %>
+    <% end %>
+<% end %>

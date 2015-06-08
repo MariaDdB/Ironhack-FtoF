@@ -1,0 +1,46 @@
+<h2> 
+	Characther: 
+	<%= @character.name %>
+</h2>
+
+	<img src="<%= @character.image %>">
+
+	<p> 
+		<strong> Age: </strong>
+		<%= @character.age %> 
+	</p>
+	
+	<p>
+		<strong> Favourite food: </strong>
+		<%= @character.favourite_food %> 
+	</p>
+	
+	<p> 
+		<strong> Programming language: </strong>
+		<%= @character.programming_language %> 
+	</p>
+
+	<p> 
+		<strong> Hobbies: </strong>
+		<%= @character.hobbies %> 
+	</p>
+
+	<% @characters.each do |character| %>
+		<p>
+			<strong> Name: </strong>
+			<%= character.name %>
+		</p>
+
+		<img src="<%= character.image %>">
+		
+		<p>
+			<strong> Programming language: </strong>
+			<%= character.programming_language %>
+		</p>
+
+	<% end %>
+
+<p>
+	<%= link_to 'Edit character', edit_character_path(@character) %> | 
+	<%= link_to 'Back', characters_path %>
+</p>

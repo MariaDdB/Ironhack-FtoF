@@ -1,0 +1,1 @@
+Word.create(name:"Kazajistan", tip:"país", lives: 5)

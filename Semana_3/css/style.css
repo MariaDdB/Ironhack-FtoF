@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	width: 100;
+}
+
+.box {
+	
+	font-size: 14;
+	width: 300px;
+	height: 300px;
+	
+	background: #ccc;
+	
+	padding: 40px 5px 40px 5px;
+	margin: 50px;
+
+	text-align: center;
+
+	border: 10px solid red;
+	box-sizing: border-box;
+}
+
+.cont {
+	width: auto;
+	height: 100px;
+
+	text-align: center;
+
+	background-color: red;
+	/*display: inline-block;*/
+	margin-left: -4px;
+}
+
+.cont:not(:first-child){
+	margin-left: -4px;
+}
+
+/*todos los que sean cont, menos el primer hijo 
+tendrán la propiedad margin-left: -4px;*/
+
+#main-container {
+	overflow: hidden;
+}
+
+#batman {
+	/*float: left;*/
+	/*position: fixed;*/
+	background: green;
+	font-weight: bold;
+	color: brown;
+}
+
+#superman {
+	/*float: right;*/
+	background: pink;
+	font-weight: brown;
+	color: green;
+}

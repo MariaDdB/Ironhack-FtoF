@@ -1,0 +1,17 @@
+<h1> Last 10 projects </h1>
+
+<ul>
+	<% @projects.each do |project| %>
+			<% if project.description == nil %>
+				<li><%= project.name %></li>
+			<% else %> 
+				<li><%= project.name %> - <%= project.description %></li>
+			<% end %>
+				
+		<%= link_to(project.name, project_entries_path(project)) %><br>
+		<%= link_to 'Edit', edit_project_path(project) %>
+		<%= link_to 'destroy', project_path(project), method: :delete, data: {confirm: 'Are you sure??'} %>
+	<% end %>
+</ul>
+
+<%= link_to 'New Project', new_project_path %>

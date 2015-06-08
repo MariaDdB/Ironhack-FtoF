@@ -1,0 +1,36 @@
+<%= form_for @character do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
+  </p>
+
+
+   <p>
+    <%= f.label :hobbies %><br>
+    <%= f.text_field :hobbies %>
+  </p>
+
+   <p>
+    <%= f.label :favourite_food %><br>
+    <%= f.text_field :favourite_food %>
+  </p>
+
+  <p>
+    <%= f.label :programming_language %><br>
+    <%= f.select :programming_language,  options_for_select([ "Ruby", "JavaScript", "PHP", "Python", "HTML5", "Java", "C++" ], "ProgrammingLanguage") %>
+  </p>
+
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<p>
+  <%= link_to 'Back', characters_path %>
+</p>

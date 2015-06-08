@@ -1,0 +1,16 @@
+<h1 class="title"> FUTUREETIC: </h1>
+
+<% @characters.each do |character| %>
+	<p><%= character.name %></p>
+
+	<img src="<%= character.image %>">
+
+		<%= link_to "Show character", character_path(character) %> |
+		<%= link_to 'Edit character', edit_character_path(character) %> |
+		<%= link_to 'Destroy', character_path(character), method: :delete, data: { confirm: "Are you sure?"} %>
+
+<% end %> 
+
+<p>
+	<%= link_to "New character", new_character_path %>
+</p>

@@ -1,0 +1,34 @@
+body {
+	background-color: #DAE4EB;
+}
+
+header {
+	padding-left: 100px;
+	background-color: #fff;
+}
+
+.img-twitter {
+	width: 25px;
+	margin-left: 250px;
+}
+
+.img-background {
+	width: 1366px;
+}
+
+.img-ironhack {
+	width: 250px;
+	border: solid 15px white;
+	z-index: 999;
+	margin: -150px 50px -80px 50px;
+	position: absolute;
+}
+
+.dropdown-elements {
+	background-color: #fff;
+	padding-left: 450px;
+}
+
+.action-elements {
+	margin-left: 400px;
+}

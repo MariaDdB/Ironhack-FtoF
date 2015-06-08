@@ -1,0 +1,23 @@
+<% if flash[:notice] %>
+	<%= flash[:notice] %>
+<% elsif flash[:alert] %>
+	<%= flash[:alert] %>
+<% end %>
+
+<ul>
+<% @entries.each do |entry| %>
+	<li>
+		<%= entry.hours %> h.
+		<%= entry.minutes %> min.
+		<%= entry.date %>
+		<%= link_to 'Edit', edit_project_entry_path(@project, entry) %>
+		<%= link_to 'Destroy', project_entry_path(@project, entry), method: :delete, data: {confirm:'Are you sure?'} %>
+	</li>
+<% end %>
+</ul>
+
+<%= link_to 'New Entry', new_project_entry_path %>
+<br>
+<br>
+<%= link_to 'Back to projects', projects_path %>
+

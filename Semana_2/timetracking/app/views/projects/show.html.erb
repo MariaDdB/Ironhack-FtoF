@@ -1,0 +1,9 @@
+<% if flash[:notice] %>
+	<%= flash[:notice] %>
+<% elsif flash[:alert] %>
+	<%= flash[:alert] %>
+<% end %>
+
+<p><%= @project.name %></p>
+<p><%= @project.description %></p>
+<p><%= @project.id %></p>

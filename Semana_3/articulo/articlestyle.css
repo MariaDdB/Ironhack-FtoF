@@ -1,0 +1,23 @@
+.header-title {
+	margin: 0;
+	width: 100;
+	text-align: center;
+	background-color: #7EABF7;
+}
+
+.form-label {
+	color: red;
+}
+
+.cool {
+	background: #555;
+}
+
+.form-label.cool {
+	border: solid 1px;
+}
+
+.cool .form-label{
+	border: solid 1px;
+	color: blue;
+}

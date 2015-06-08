@@ -1,0 +1,10 @@
+<h1><strong> Contacts: </strong></h1>
+
+<% @contacts.each do |contact| %>
+		<p><strong><%= contact.name %></strong>
+	<%= link_to 'show', contact_path(contact) %></p>
+<% end %>
+
+<% ('A'..'Z').to_a.each do |letter| %>
+	<%= link_to letter, root_path(letter)  %>
+<% end %>

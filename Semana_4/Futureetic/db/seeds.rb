@@ -1,0 +1,7 @@
+Character.create(name:"Bender Bending Rodríguez", age: 2997, favourite_food:"cerveza", programming_language:"Ruby", hobbies:"robopilinguis", image: "/images/bender_rodriguez_360.png")
+Character.create(name:"Philip J.Fry", age:1041, favourite_food:"anchoas", programming_language:"PHP", hobbies:"dormir", image: "/images/philip_fry_360.png")
+Character.create(name:"Turanga leela",age:40, favourite_food:"poplers", programming_language:"Ruby", hobbies:"mandar", image: "/images/turanga_leela_360.png")
+Character.create(name:"Doctor Zoidberg", age:46, favourite_food:"palomas", programming_language:"JavaScript", hobbies:"lamentarse", image: "/images/dr_john_zoidberg_360.png")
+Character.create(name:"Amy Wong", age:36, favourite_food:"pizza", programming_language:"JavaScript", hobbies:"comprar", image: "/images/futuramaamywong_360.png")
+Character.create(name:"Profesor Hubert Famsworth", age:169, favourite_food:"sopas", programming_language:"PHP", hobbies:"construir robots", image: "/images/futuramaprofessorfarnsworth_360.png")
+Character.create(name:"Hermes Conrad", age:53 , favourite_food:"ostras", programming_language:"Ruby", hobbies:"adicto al trabajo", image: "/images/futuramahermesconrad_360.png")

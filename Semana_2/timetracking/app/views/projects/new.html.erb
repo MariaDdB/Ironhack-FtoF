@@ -1,0 +1,27 @@
+<% if @project.errors.any? %>
+	<ul>
+		<% @project.errors.full_messages.each do |error_msg| %>
+			<li> <%= error_msg %> </li>
+		<% end %>
+	</ul>
+<% end %>
+
+<%= render "form" %>
+
+<!--
+=begin 
+<%= form_for @project do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<br>
+	<br>
+	<%= f.label :description %>
+	<%= f.text_field :description %>
+	<br>
+	<br>
+
+	<%= f.submit 'save' %>
+<% end %> 
+-->
+
+<%= link_to 'Back',  projects_path %>

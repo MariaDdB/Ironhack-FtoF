@@ -1,0 +1,24 @@
+body{
+	background-color:#CF9012;
+	color:#FFFFFF;
+}
+
+#list{
+	background-color: #3C1A4C;
+	font-size: 20px;
+	position:relative;
+    width:40%;
+    height:50%;
+    overflow:hidden;
+    margin-left: 30%;
+    margin-right: 25%;
+    border-radius: 15px;
+    box-shadow: 13px 13px 5px 0px rgba(0,0,0,0.75);
+}
+h1 {text-align: center;
+	font-size: 44px;
+	}
+#mortalTitle{
+	font-size: 80;
+	color: #CF230D;
+}
